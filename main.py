@@ -1,11 +1,14 @@
 import requests
 
-# Revisa el archivo api.txt buscando la apikey y la guarda en una variable
-with open('api.txt', 'r') as api:
-    apikey = api.read()
+
+
 try:
     while True:
         while True:  # Bucle infinito para continuar solicitando direcciones IP
+            
+            # Revisa el archivo api.txt buscando la apikey y la guarda en una variable
+            with open('api.txt', 'r') as api:
+                apikey = api.read()
             # Pide la IP por consola
             ip = input("IP: ")
 
